@@ -1,10 +1,8 @@
 import numpy as np
-import csv
-import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.autograd import Variable
 import torch.utils.data as data
+
 
 class HandyFunctions:
     def OneHotEncoding(self, data, no_samples):
