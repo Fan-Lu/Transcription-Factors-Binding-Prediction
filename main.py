@@ -27,7 +27,8 @@ trainloader = torch.utils.data.DataLoader(dataset, batch_size=4,
                                           shuffle=True, num_workers=2)
 
 net = Net()
-criterion = nn.MSELoss()
+#criterion = nn.MSELoss()
+criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 if __name__ == "__main__":
